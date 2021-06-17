@@ -1,0 +1,24 @@
+.btn {
+  width: 100%;
+  height: 51px;
+  background-color: transparent;
+  border: 1px solid #15573F;
+  box-sizing: border-box;
+  border-radius: 25px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #196146;
+  cursor: pointer;
+  .btnContent{
+    @media(min-width: 1199px){
+    width: 20%;
+    margin: 0 auto;
+    }
+  }
+  .arrowUp{
+      background-image: url(../../../images/icons/arrow-up.svg);
+      background-repeat: no-repeat;
+    }
+  }

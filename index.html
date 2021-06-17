@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Front End Test - Greenthumb</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./utils/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/glider.css" />
+
+    <link rel="stylesheet" href="./index.scss" />
+  </head>
+
+  <body>
+    <div id="root" />
+    <script src="./assets/glider.js"></script>
+
+    <script src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script>
+      import checkElement from "./utils/checkElement";
+      checkElement("#pickers").then((selector) => {
+        new Glider(document.querySelector(".glider"), {
+          slidesToShow: 5,
+          slidesToScroll: 5,
+          draggable: true,
+          dots: ".dots",
+          arrows: {
+            prev: ".glider-prev",
+            next: ".glider-next"
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

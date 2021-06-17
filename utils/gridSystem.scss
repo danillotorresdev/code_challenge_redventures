@@ -1,0 +1,26 @@
+.container {
+  max-width:  900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+$grid-gutter: 16px;
+$grid-columns: 12;
+$grid-max: 1004px;
+
+
+[class*="grid-"]{
+  float: left;
+  // padding: 0 $grid-gutter;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+@for $i from 1 through $grid-columns{
+  .grid-#{$i}{
+    width: 100%;
+    @media(min-width: 1280px){
+      width: 100% / $grid-columns * $i
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.cardConditions {
+  width: 219px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.cardConditionsHeader {
+  display: flex;
+  flex-direction: column;
+
+ 
+  &__imageWrapper {
+    margin-bottom: 15px;
+    & .cardImage{
+      height: 75px;
+    }
+  }
+  &__description {
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #848484;
+    margin-bottom: 15px;
+    b {
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.noResYetTitle {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 55px;
+  color: #A9A9A9;
+}
+
+.noResYetDescription {
+  font-size: 16px;
+  line-height: 27px;
+  color: #A9A9A9;
+  padding-top: 20px;
+  @media(min-width: 1280px){
+    width: 219px;
+  }
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  @media(min-width: 1280px){
+    display: inherit;
+    justify-content: inherit;
+  }
+}

@@ -1,0 +1,21 @@
+.picksSection {
+  background-color: #F6F6F6;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  @media(min-width: 1280px){
+    padding: 40px;
+    margin-bottom: 50px;
+  }
+  .titleFromSectionWrapper {
+    padding-bottom: 20px;
+  }
+  .buttonWrapper {
+    padding: 20px 0 20px 0;
+  }
+
+  .glider{
+    display: flex;
+  }
+}

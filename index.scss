@@ -1,0 +1,21 @@
+@import "./utils/gridSystem.scss";
+
+@import "./components/atoms/Title/styles.scss";
+@import "./components/atoms/BackToTheTopBtn/styles.scss";
+
+@import "./components/organisms/Banner/styles.scss";
+@import "./components/organisms/Conditions/styles.scss";
+@import "./components/organisms/Picks/styles.scss";
+
+@import "./components/molecules/Select/styles.scss";
+@import "./components/molecules/TitleFromSection/styles.scss";
+@import "./components/molecules/CardProduct/styles.scss";
+@import "./components/molecules/NoResultsYet/styles.scss";
+@import "./components/molecules/CardConditions/styles.scss";
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #F6F6F6;
+}
+
+

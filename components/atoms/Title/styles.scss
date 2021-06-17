@@ -1,0 +1,12 @@
+.title {
+  font-family: Montserrat;
+  font-style: normal;
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  @media(min-width: 1280px){
+    font-size: 70px;
+    line-height: 85px;
+  }
+}

@@ -1,0 +1,178 @@
+.cardProduct {
+  background-color: #fff;
+  height: 100%;
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  margin: 0 auto;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-right: 20px;
+  width: 258px;
+  height: 321px;
+  @media(min-width: 1280px){
+    margin: 0 auto;
+    height: 245px;
+    width: 206px;
+  }
+  &__product {
+   &--staffFavorite{
+    width: 258px;
+    height: 321px;
+    margin-right: 20px;
+    @media(min-width: 1280px){
+      width: 437px;
+      height: 510px;
+    }
+    .cardProductHeader {
+      height: 83%;
+    }
+    .cardProductFooter {
+      height: 17%;
+      @media(min-width:1280px){
+        display: flex;
+      }
+      .leftContent{
+        width: 60%;
+      }
+      .rightContent{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .classificationIcon {
+          width: 29px;
+          height: 31.29px;
+        }
+      }
+    }
+    .cardProductTitle {
+      font-size: 16px;
+      line-height: 28px;
+      @media(min-width:1280px){
+          font-size: 35px;
+         line-height: 37px;
+      }
+      
+    }
+    .price {
+      @media(min-width:1280px){
+        font-size: 24px;
+        line-height: 28px;
+    }
+     
+    }
+   }
+  }
+}
+
+.cardProductHeader {
+  height: 83%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media(min-width: 1280px){
+    height: 85%;
+  }
+}
+
+
+.cardProductFooter {
+  height: 17%;
+  @media(min-width: 1280px){
+    height: 25%;
+  }
+}
+
+.ribbon {
+  background: #75BC97;
+  box-shadow: 0px 10px 28px rgba(0, 0, 0, 0.181163);
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width :189px ;
+  height: 43px;
+  font-style: normal;
+  font-weight: normal;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+}
+.priceAndConditions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  color: #257556;
+  text-align: right;
+}
+
+.imageWrapper{
+  .cardProductImage{
+    width: 129px;
+    height: 129px;
+    object-fit: contain;
+    @media(min-width:1280px){
+      width: 139px;
+      height: 153px;
+      object-fit: contain;
+    }
+  }
+
+  &__favorite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cardProductImage{
+      width: 129px;
+      height: 129px;
+      @media(min-width: 1280px){
+        width: 299px;
+        height: 353px;
+      }
+      object-fit: contain;
+    }
+  }
+
+}
+
+
+.cardProductTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1E6B4E;
+}
+
+.classification {
+  display: flex;
+  justify-content: flex-end;
+  // padding-top: 10px;
+  .cardProductImage{
+    width: 34.75px;
+    height: 25.61px;
+  }
+  .classificationIcon {
+    padding-left: 10px;
+    width: 16px;
+    height: 15px;
+  }
+}
+

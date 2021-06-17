@@ -1,0 +1,24 @@
+.conditionsSection {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 15px 0 40px 0;
+  @media(min-width: 1199px){
+    height: 299px;
+  }
+
+  .conditions{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    height:100%;
+    .cardConditions:nth-child(2) {
+      margin: 40px 0;
+    }
+    @media(min-width: 1280px){
+      justify-content: space-between;
+    }
+  }
+}
